@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def new_in_list(my_list, idx, element):
     list_copy = my_list[:]
 
@@ -6,4 +7,4 @@ def new_in_list(my_list, idx, element):
         return (my_list)
     else:
         list_copy[idx] = element
-    return 
+    return list_copy 
