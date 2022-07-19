@@ -2,10 +2,9 @@
 from sys import stderr
 
 
-def safe_print_integer_err(value):
+def safe_function(fct, *args):
     try:
-        print("{:d}".format(value))
-        return (True)
-    except (TypeError, ValueError) as e:
+        return fct(*args)
+    except (ZeroDivisionError, IndexError, TypeError, ValueError) as e:
         stderr.write("Exception: {}\n".format(e))
-        return (False)
+        return None
