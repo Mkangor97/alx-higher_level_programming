@@ -1,6 +1,4 @@
 #!/usr/bin/node
-<<<<<<< HEAD
-
 const dict = require('./101-data.js').dict;
 let newDict = {};
 for (let key in dict) {
